@@ -1,6 +1,3 @@
-online link
-http://techmynd.net/tests/citest/
-
 for online htaccess should have 
 
 <IfModule mod_rewrite.c>
