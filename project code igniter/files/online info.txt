@@ -1,0 +1,16 @@
+online link
+http://techmynd.net/tests/citest/
+
+for online htaccess should have 
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>
+
+notice> ? infront of index.php
+
+controller and model files should have names starting with capital letters and classes in them should also start with capital letter
